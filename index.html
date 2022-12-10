@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container mt-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-food">Enter the name of the food</label>
+                        <input type="text" class="form-control" id="new-food" placeholder="Food">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <label for="new-calorie">Enter the calories of the food</label>
+                    <input type="number" class="form-control" id="new-calorie" placeholder="Number of calories">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-time">At what time did you eat?</label>
+                        <input type="time" class="form-control" id="new-time" style="width: 150px;">
+                    </div>
+                </div>
+                <div>
+                    <button id="add" class="btn btn-primary from-control mt-2">Add</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped mt-3">
+        <tr>
+            <th>Food</th>
+            <th>Calories</th>
+            <th>Time</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
